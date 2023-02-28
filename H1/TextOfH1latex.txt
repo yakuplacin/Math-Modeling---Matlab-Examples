@@ -1,0 +1,124 @@
+\documentclass[a4paper]{article}
+\usepackage{student}
+\usepackage{graphicx}
+\usepackage{epsfig}
+\usepackage{listings}
+\usepackage{color} %red, green, blue, yellow, cyan, magenta, black, white
+\definecolor{mygreen}{RGB}{28,172,0} % color values Red, Green, Blue
+\definecolor{mylilas}{RGB}{170,55,241}
+
+\lstset{language=Matlab,%
+    breaklines=true,%
+    morekeywords={matlab2tikz},
+    keywordstyle=\color{blue},%
+    morekeywords=[2]{1}, keywordstyle=[2]{\color{black}},
+    identifierstyle=\color{black},%
+    stringstyle=\color{mylilas},
+    commentstyle=\color{mygreen},%
+    showstringspaces=false,%without this there will be a symbol in the places where there is a space
+    emph=[1]{for,end,break},emphstyle=[1]\color{red}, %some words to emphasise
+}
+
+% Metadata
+\date{\today}
+\setmodule{COMP206: Mathematical Modeling and Algorithmic Thinking}
+\setterm{Semester 1, 2022}
+
+\title{Assignment 1}
+\setmembername{Yakup LAÇIN}
+\setmemberuid{110510256}
+
+
+\usepackage{amsmath,amssymb,bm}
+
+\newcommand{\KL}{\mathrm{KL}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\T}{\top}
+
+\newcommand{\expdist}[2]{%
+        \normalfont{\textsc{Exp}}(#1, #2)%
+    }
+\newcommand{\expparam}{\bm \lambda}
+\newcommand{\Expparam}{\bm \Lambda}
+\newcommand{\natparam}{\bm \eta}
+\newcommand{\Natparam}{\bm H}
+\newcommand{\sufstat}{\bm u}
+
+% Main document
+\begin{document}
+    % Add header
+    \header{}
+
+    % Use `answer` environment to add solutions
+    % \begin{answer}[Question 1.1] for example starts an environment formatted
+    % for Question 1.1
+    \begin{answer}[Question 1]
+    \textbf{ Part a}
+    \begin{center}
+        \lstinputlisting{q1partA.m}
+    \end{center}
+
+    \textbf{Part b}
+    \begin{center}
+        \lstinputlisting{q1partb.m}
+    \end{center}
+    \textbf{Part c}
+    \begin{center}
+        \lstinputlisting{q1partc.m}
+    \end{center}
+    \textbf{Part d}
+    \begin{center}
+        \lstinputlisting{q1part4.m}
+    \end{center}
+    \end{answer}
+    
+    \begin{answer}[Question 2]
+
+    \begin{center}
+        \lstinputlisting{q2.m}
+    \end{center}
+ Elapsed time is 8.030583 seconds for part a.
+Elapsed time is 465.660931 seconds for part d.
+Q3)
+
+    \end{answer}
+    
+    \begin{answer}[Question 3]
+    \begin{center}
+        \lstinputlisting{q3.m}
+    \end{center}
+Elapsed time is 7.282455 seconds for part a.
+Elapsed time is 1.641797 seconds for part b.
+    \end{answer}
+    \begin{figure}[!ht]
+           \centering
+           \includegraphics[width=0.5\textwidth]{exp.eps}
+           \caption{q1 exp}
+           \label{fig:my_label}
+       \end{figure}
+       \begin{figure}[!ht]
+           \centering
+           \includegraphics[width=0.5\textwidth]{log.eps}
+           \caption{q1 log}
+           \label{fig:my_label}
+       \end{figure}
+       \begin{figure}[!ht]
+           \centering
+           \includegraphics[width=0.5\textwidth]{sinus.eps}
+           \caption{Q1 sinus}
+           \label{fig:my_label}
+       \end{figure}
+       \begin{figure}[!ht]
+           \centering
+           \includegraphics[width=0.5\textwidth]{cos.eps}
+           \caption{Q1 cosinus}
+           \label{fig:my_label}
+       \end{figure}
+       \begin{figure}[!ht]
+           \centering
+           \includegraphics[width=0.5\textwidth]{q2partb.eps}
+           \caption{Q2 part b scatter}
+           \label{fig:my_label}
+       \end{figure}
+\end{document}

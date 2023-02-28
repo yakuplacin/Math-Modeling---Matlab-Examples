@@ -1,0 +1,11 @@
+>> q2
+Elapsed time is 8.030583 seconds.
+Elapsed time is 465.660931 seconds.
+
+>> 
+
+
+>> q3
+Elapsed time is 7.282455 seconds.
+Elapsed time is 1.641797 seconds.
+>> 
